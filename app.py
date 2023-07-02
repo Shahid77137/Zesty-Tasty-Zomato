@@ -10,16 +10,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = f"mysql+mysqlconnector://root:{quote_plu
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False  # Disable modification tracking
 db = SQLAlchemy(app)
 CORS(app)
-# migrate = Migrate(app, db)
-
-# class Snack(db.Model):
-#     id = db.Column(db.Integer, primary_key=True)
-#     name = db.Column(db.String(100), nullable=False)
-#     price = db.Column(db.Float, nullable=False)
-#     availability = db.Column(db.String(50), default='0')
-
-#     def __repr__(self):
-#         return f"Snack(id={self.id}, name='{self.name}', price={self.price},availability='{self.availability})"
 
 
 class Snack(db.Model):
