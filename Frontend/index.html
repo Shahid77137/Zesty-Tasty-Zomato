@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <div class="Mlogo">
+                <img id="MsportLogo" src="Images/Msport.png" alt="">
+                <h2>SH<span class="skyblue">AH</span><span class="blue">I</span><span class="red">D</span></h2>
+            </div>
+         <img src="#" alt=" " id="poster">
+        </div>
+        <nav>
+            <span id="menu" class="material-symbols-rounded">
+                menu
+                </span>
+                <div class="right_menu">
+                    <ul>
+                        <li><a href="" id="ViewOrders" onclick="ViewOrders()">Orders</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <!-- <li><a href="">Contact Us</a></li> -->
+                    </ul>
+                    <div class="user_logout">
+                        <span onclick="Logout()" class="material-symbols-rounded">
+                            logout
+                            </span>
+                    </div>
+                </div>
+        </nav>
+        <div class="left_menu"></div>
+        <!-- <section id="section">
+            <div class="content">
+                <h1 id="title">Chicken</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis molestiae aliquid, atque vel praesentium dolores doloremque eius error fugit quis?</p>
+                <div class="price_order">
+                    <div class="price">
+                        <h2 id="price_cont">₹200</h2>
+                        <p>Total payable</p>
+                    </div>
+                    <a href="">Order Now</a>
+                </div>
+                <div class="cards">
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                </div>
+            </div>
+        </section> -->
+    </header>
+    <section id="section">
+        <div class="content">
+            <h1 id="title">Chicken</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis molestiae aliquid, atque vel praesentium dolores doloremque eius error fugit quis?</p>
+            <div class="price_order">
+                <div class="price">
+                    <h2 id="price_cont">₹200</h2>
+                    <p>Total payable</p>
+                </div>
+                <a id="OrderNow" href="">Order Now</a>
+            </div>
+           
+        </div>
+        
+    </section>
+    <div class="cards">
+        <!-- <div class="card">
+            <div class="imgwithprice">
+                <img src="http://www.warrnamboolrsl.org/__static/static/266/photo-002.png" alt="" class="dish">
+                <h4>₹150</h4>
+            </div>
+            <h5>Roasted Chicken</h5>
+        </div> -->
+        
+    </div>
+    <!-- <div class="arrowbtns"> -->
+        <!-- <span class="material-symbols-rounded" id="leftbtn">
+            chevron_left
+            </span>
+        <span class="material-symbols-rounded" id="rightbtn">
+            chevron_right
+            </span> -->
+    <!-- </div> -->
+    <!-- <h2>Hello</h2> -->
+
+    <div id="form-containerorder" class="hidden" style="display: none;">
+        <span id="order-btn" onclick="closeOrderForm()">X</span>
+        <h2>Order Food</h2>
+        <form id="order-food-form">
+          <label for="name" class="placeholder">Customer Name</label>
+          <input class="input" type="text" id="name" name="name" required>
+          <br>
+          <button class="submit" type="submit">Order Now</button>
+        </form>
+      </div>
+
+      <div id="orders-container" class="hidden" style="display: none;">
+        <table id="orders-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Customer Name</th>
+              <th>Item Name</th>
+              <th>Status</th>
+              <th>Activity</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+
+    <script src="Scripts.js"></script>
+</body>
+</html>
