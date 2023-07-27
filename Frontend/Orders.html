@@ -85,7 +85,7 @@ window.onload = function(){
   const ordersTableBody = document.querySelector('#orders-table tbody');
   ordersTableBody.innerHTML = '';
   const userId = localStorage.getItem('userId');
-  fetch(`http://localhost:8080/vieworders/${userId}`, {
+  fetch(`https://shahid1804.pythonanywhere.com/vieworders/${userId}`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json'
@@ -119,7 +119,7 @@ window.onload = function(){
         cancelButton.addEventListener('click', function(event) {
           event.preventDefault();
           const orderId = event.target.dataset.id;
-          fetch(`http://localhost:8080/deleteorder/${userId}/${orderId}`, {
+          fetch(`https://shahid1804.pythonanywhere.com/deleteorder/${userId}/${orderId}`, {
             method: 'DELETE',
             headers: {
               'Content-Type': 'application/json'

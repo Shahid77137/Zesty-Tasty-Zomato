@@ -100,7 +100,7 @@ window.onload = function(){
   const ordersTableBody = document.querySelector('#orders-table tbody');
   ordersTableBody.innerHTML = '';
   const userId = localStorage.getItem('userId');
-  fetch(`http://localhost:8080/viewallorder`, {
+  fetch(`https://shahid1804.pythonanywhere.com/viewallorder`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json'
@@ -150,7 +150,7 @@ window.onload = function(){
   const status = formData.get('status');
   const orderData = { status };
   // Perform the fetch request to the backend API with the form data
-  fetch(`http://localhost:8080/updateorder/${OrdersId}`, {
+  fetch(`https://shahid1804.pythonanywhere.com/updateorder/${OrdersId}`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json'

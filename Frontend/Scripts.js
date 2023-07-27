@@ -11,7 +11,7 @@
 // })
 let snackId;
 
-fetch('http://localhost:8080/viewsnack')
+fetch('https://shahid1804.pythonanywhere.com/viewsnack')
   .then(response => response.json())
   .then(data => {
     const cardsDiv = document.querySelector('.cards');
@@ -163,7 +163,7 @@ function handleCardClick(event) {
 //     const data = { name: customerName, id: snackId };
 //     const userId = localStorage.getItem('userId');
 //     console.log("USSR "+userId)
-//     fetch(`http://localhost:8080/takeorder/${userId}`, {
+//     fetch(`https://shahid1804.pythonanywhere.com/takeorder/${userId}`, {
 //       method: 'POST',
 //       headers: {
 //         'Content-Type': 'application/json'
@@ -202,7 +202,7 @@ orderForm.addEventListener('submit', function(event) {
   const data = { name: customerName, id: snackId };
   const userId = localStorage.getItem('userId');
   console.log("User ID: " + userId);
-  fetch(`http://localhost:8080/takeorder/${userId}`, {
+  fetch(`https://shahid1804.pythonanywhere.com/takeorder/${userId}`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -234,7 +234,7 @@ ordersLink.addEventListener('click', function(event) {
   const ordersTableBody = document.querySelector('#orders-table tbody');
   ordersTableBody.innerHTML = '';
   const userId = localStorage.getItem('userId');
-  fetch(`http://localhost:8080/vieworders/${userId}`, {
+  fetch(`https://shahid1804.pythonanywhere.com/vieworders/${userId}`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json'
@@ -268,7 +268,7 @@ ordersLink.addEventListener('click', function(event) {
         cancelButton.addEventListener('click', function(event) {
           event.preventDefault();
           const orderId = event.target.dataset.id;
-          fetch(`http://localhost:8080/deleteorder/${userId}/${orderId}`, {
+          fetch(`https://shahid1804.pythonanywhere.com/deleteorder/${userId}/${orderId}`, {
             method: 'DELETE',
             headers: {
               'Content-Type': 'application/json'

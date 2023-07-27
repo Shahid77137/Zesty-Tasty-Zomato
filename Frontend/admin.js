@@ -42,7 +42,7 @@ themeToggler.addEventListener('click',()=>{
 var snackId;
 window.onload = function() {
     // fetch data from the backend using fetch API
-    fetch('http://localhost:8080/viewtopsnacks')
+    fetch('https://shahid1804.pythonanywhere.com/viewtopsnacks')
       .then(response => response.json())
       .then(data => {
         // fill orders in table
@@ -66,7 +66,7 @@ window.onload = function() {
           button.addEventListener('click', (event) => {
              snackId = event.target.dataset.id;
             // do something with snackId
-            fetch(`http://localhost:8080/deletesnack/${snackId}`, {
+            fetch(`https://shahid1804.pythonanywhere.com/deletesnack/${snackId}`, {
                 method: 'DELETE'
               })
               .then(response => response.json())
@@ -100,7 +100,7 @@ updateFoodForm.addEventListener('submit', (event) => {
     const availability = formData.get('availability');
     const snackData = { name, price,image_url,availability}
     // Perform the fetch request to the backend API with the form data
-    fetch(`http://localhost:8080/updatesnack/${snackId}`, {
+    fetch(`https://shahid1804.pythonanywhere.com/updatesnack/${snackId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'
@@ -127,7 +127,7 @@ updateFoodForm.addEventListener('submit', (event) => {
 
 
   function ViewAllSnacks(){
-    fetch('http://localhost:8080/viewsnack')
+    fetch('https://shahid1804.pythonanywhere.com/viewsnack')
       .then(response => response.json())
       .then(data => {
         // fill orders in table
@@ -151,7 +151,7 @@ updateFoodForm.addEventListener('submit', (event) => {
           button.addEventListener('click', (event) => {
              snackId = event.target.dataset.id;
             // do something with snackId
-            fetch(`http://localhost:8080/deletesnack/${snackId}`, {
+            fetch(`https://shahid1804.pythonanywhere.com/deletesnack/${snackId}`, {
                 method: 'DELETE'
               })
               .then(response => response.json())
@@ -184,7 +184,7 @@ updateFoodForm.addEventListener('submit', (event) => {
     const price = formData.get('price');
     const snackData = { name, price}
     // Perform the fetch request to the backend API with the form data
-    fetch(`http://localhost:8080/updatesnack/${snackId}`, {
+    fetch(`https://shahid1804.pythonanywhere.com/updatesnack/${snackId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'
@@ -229,7 +229,7 @@ function addFoodBtn(){
     const availability = formData.get('availability');
     
     // Perform the fetch request to the backend API with the form data
-    fetch('http://localhost:8080/addsnack', {
+    fetch('https://shahid1804.pythonanywhere.com/addsnack', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -272,7 +272,7 @@ function addFoodBtn(){
     const image_url = formData.get('image_url');
     const availability = formData.get('availability');
     // Perform the fetch request to the backend API with the form data
-    fetch('http://localhost:8080/addsnack', {
+    fetch('https://shahid1804.pythonanywhere.com/addsnack', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
