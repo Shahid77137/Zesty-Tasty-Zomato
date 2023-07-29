@@ -309,3 +309,13 @@ if __name__ == '__main__':
 
 def create_app():
     return app    
+
+#  Link of this project 
+
+#  Netlify Link :-  https://spontaneous-malasada-746986.netlify.app/
+
+#  Backend Deploy Link :-  https://shahid1804.pythonanywhere.com/
+
+
+
+  
