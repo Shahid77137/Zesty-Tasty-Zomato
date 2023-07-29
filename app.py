@@ -310,6 +310,9 @@ if __name__ == '__main__':
 def create_app():
     return app    
 
+
+
+
 # # Define the Snack model to store snack information
 # class Snack(db.Model):
 #     # Columns for the Snack table
@@ -450,11 +453,7 @@ def create_app():
 #     # Delete an order with the provided order ID associated with a user with the provided user ID.
 #     # Return a message indicating successful deletion or an error message if the order with the given user ID and order ID does not exist.
 
-# if __name__ == '__main__':
-#     app.run(port=8080)
 
-# def create_app():
-#     return app
 
 
 #  Link of this project 
