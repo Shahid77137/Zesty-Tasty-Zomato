@@ -1,1 +1,2 @@
 # Zesty-Tasty-Zomato
+In the bustling city of Mumbai, "Zesty-Tasty-Zomato" has emerged as the latest sensation in the restaurant scene. To elevate their service and cater to the ever-growing demand for convenient dining options, Zesty-Tasty-Zomato has decided to modernize its operations by going digital. As a skilled Flask developer and web designer, I've been entrusted with the task of creating a sophisticated web application that will streamline Zesty Zomato's food delivery services.
